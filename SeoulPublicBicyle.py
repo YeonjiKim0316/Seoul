@@ -17,7 +17,7 @@ import sys
 
 
 def app():
-  p = subprocess.run([f"{sys.executable}", "script.py"])
+  p = subprocess.run([f"{sys.executable}", "python run script.py"])
   st.write(p)
 
 app()
