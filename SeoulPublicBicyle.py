@@ -12,6 +12,13 @@ import json
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
+import subprocess
+import sys
+
+
+def app():
+  p = subprocess.run([f"{sys.executable}", "script.py"])
+  st.write(p)
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
