@@ -12,15 +12,6 @@ import json
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
-import subprocess
-import sys
-
-
-def app():
-  p = subprocess.run(["python run script.py"])
-  st.write(p)
-
-app()
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
@@ -230,4 +221,3 @@ elif select2 == '활성화 방안 및 소감':
         소감: 좋은 팀원들이 의견도 많이 내주고 다같이 협동해서 완성된 결과를 만들어낸 것 같아서
            보람찬 프로젝트였다! 모두들 고생했어요~
            """)
-
