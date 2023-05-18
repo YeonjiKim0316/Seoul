@@ -1,0 +1,2 @@
+korean*
+fonts-unfonts-core
