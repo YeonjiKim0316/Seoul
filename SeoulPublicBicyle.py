@@ -4,14 +4,23 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import plotly.graph_objects as go
 import streamlit as st
-import matplotlib.font_manager  as fornm
+from matplotlib import fm, rc
 from PIL import Image
 import os
-mpl.rcParams['font.family']  = 'Malgun Gothic'
 import json
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
+import subprocess
+import sys
+
+path = '/usr/share/fonts/truetype/unfonts-core/UnDotum.ttf'
+fontprop = fm.FontProperties(fname=path, size=18)
+
+print(mpl.matplotlib_fname())
+print(mpl.get_cachedir())
+
+# mpl.rcParams['font.family'] = 'Nanum Brush Script'
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
