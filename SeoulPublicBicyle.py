@@ -20,6 +20,8 @@ def app():
   p = subprocess.run([f"{sys.executable}", "script.py"])
   st.write(p)
 
+app()
+
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
 list1 = ['월별이용현황','자치구별이용현황','시간대별이용현황']
