@@ -16,10 +16,10 @@ from streamlit_folium import st_folium
 # 현재 설치된 폰트 확인해보기
 sys_font = fm.findSystemFonts()
 
-st.write(f"sys_font number: {len(sys_font)}")
-st.write(sys_font)
+# st.write(f"sys_font number: {len(sys_font)}")
+# st.write(sys_font)
 
-mpl.rcParams['font.family']  = 'Malgun Gothic'
+mpl.rcParams['font.family']  = 'NanumGothic'
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
