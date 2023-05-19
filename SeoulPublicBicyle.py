@@ -4,14 +4,22 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import plotly.graph_objects as go
 import streamlit as st
-import matplotlib.font_manager  as fornm
+import matplotlib.font_manager  as fm
 from PIL import Image
 import os
-mpl.rcParams['font.family']  = 'Malgun Gothic'
+
 import json
 import folium
 from folium.plugins import MarkerCluster
 from streamlit_folium import st_folium
+
+# 현재 설치된 폰트 확인해보기
+sys_font = fm.findSystemFonts()
+
+print(f"sys_font number: {len(sys_font)}")
+print(sys_font)
+
+mpl.rcParams['font.family']  = 'Malgun Gothic'
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
