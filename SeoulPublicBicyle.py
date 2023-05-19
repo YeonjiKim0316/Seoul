@@ -22,6 +22,7 @@ nanum_font = [f for f in sys_font if 'Nanum' in f]
 st.write(nanum_font)
 
 plt.rc('font', family='NanumGothic') 
+plt.rc('axes', unicode_minus=False)
 
 st.sidebar.title("서울시 공공자전거 활성화 방안 분석")
 st.sidebar.header("22년도 이용현황 그래프")
