@@ -16,11 +16,6 @@ from streamlit_folium import st_folium
 # 현재 설치된 폰트 확인해보기
 sys_font = fm.findSystemFonts()
 
-# st.write(f"sys_font number: {len(sys_font)}")
-# st.write(sys_font)
-nanum_font = [f for f in sys_font if 'Nanum' in f]
-st.write(nanum_font)
-
 plt.rc('font', family='NanumGothic') 
 plt.rc('axes', unicode_minus=False)
 
