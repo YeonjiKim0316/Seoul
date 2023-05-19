@@ -16,8 +16,8 @@ from streamlit_folium import st_folium
 # 현재 설치된 폰트 확인해보기
 sys_font = fm.findSystemFonts()
 
-print(f"sys_font number: {len(sys_font)}")
-print(sys_font)
+st.write(f"sys_font number: {len(sys_font)}")
+st.write(sys_font)
 
 mpl.rcParams['font.family']  = 'Malgun Gothic'
 
